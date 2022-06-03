@@ -3,6 +3,9 @@ current workload (what to do)
 2. Create database
 3. Connect github to MongoDB
 4. Create setup and authentication page
+(IF CAN BEFORE TUESDAY 7TH JUNE 2022)
+
+
 5. Basic Create.Register.Update.Delete or CRUD for short
 6. Ticket system
 7. Tracking system
