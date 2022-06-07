@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZUHAIMU-BMI Calculator</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+ 
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Zu<span>hai</span>mu</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" >
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-text">
+                            <h1>Body Mass Index (BMI)</h1>
+                            <p>
+                                Measures your body mass right now!
+                            </p>
+                            <div class="hero-btn">
+                                <a class="btn" href="#calculateBMI">BMI Calculator</a>
+                                <br><br>
+                                <div class="w3-container" >
+                                    <button onclick="document.getElementById('id01').style.display='block'" class="btn" style="padding: 12px 35px; margin-left: -15px;">BMI Tables</button>
+                                
+                                    <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content">
+                                        <header class="w3-container w3-teal"> 
+                                        <span onclick="document.getElementById('id01').style.display='none'" 
+                                        class="w3-button w3-display-topright">&times;</span>
+                                        <h3>BMI Tables</h3>
+                                        </header>
+                                        <div class="w3-container">
+                                            <table class="w3-table w3-striped">
+                                                
+                                                <tr>
+                                                <th>BMI Category</th>
+                                                <th>BMI Range(kg/m2)</th>
+                                                <th>Health risk</th>
+                                                </tr>
+                                                <tr>
+                                                <td>Underweight</td>
+                                                <td>18.4 and below</td>
+                                                <td>Malnutrition risk</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Normal Weight</td>
+                                                <td>18.5 -24.9</td>
+                                                <td>Low Risk</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Overweight</td>
+                                                <td>25-29.9</td>
+                                                <td>Enhanced Risk</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Moderately obese</td>
+                                                    <td>30 -34.9</td>
+                                                    <td>Medium Risk</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Severely obese</td>
+                                                    <td>35 -39.9</td>
+                                                    <td>High Risk</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Very Severely obese</td>
+                                                    <td>40 and above</td>
+                                                    <td>Very High Risk</td>
+                                                </tr>
+                                                <br>
+                                                
+                                            </table><br>
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="img/BMI.jpg" alt="BMI">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/bodymassweight.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+                            <p>Learn About Us</p>
+                            <h2>What is BMI?</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                The BMI (Body Mass Index) is a measurement of a person's weight. It is a way to calculate your body fat percentage depending on your height and weight. It is applicable to both males and women of legal age. 
+                                It is a screening technique for determining whether or not a person is at a healthy weight.                            </p>
+                            <p>
+                                BMI detects weight categories that may cause health concerns, but it does not diagnose an individual's body fatness or health. The significance of BMI is that it can help you maintain a healthy weight for your heart. 
+                                You might also begin to look after your health by eating a heart-healthy diet and increasing your physical exercise.
+                            </p>
+                             <div class="w3-container">
+                                <button onclick="document.getElementById('id01').style.display='block'" class="btn" >BMI Tables</button>
+          
+                                <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <header class="w3-container w3-teal"> 
+                                    <span onclick="document.getElementById('id01').style.display='none'" 
+                                    class="w3-button w3-display-topright" >&times;</span>
+                                    <h3>BMI Tables</h3>
+                                    </header>
+                                    <div class="w3-container">
+                                        <table class="w3-table w3-striped">
+                                            
+                                            <tr>
+                                            <th>BMI Category</th>
+                                            <th>BMI Range(kg/m2)</th>
+                                            <th>Health risk</th>
+                                            </tr>
+                                            <tr>
+                                            <td>Underweight</td>
+                                            <td>18.4 and below</td>
+                                            <td>Malnutrition risk</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Normal Weight</td>
+                                            <td>18.5 -24.9</td>
+                                            <td>Low Risk</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Overweight</td>
+                                            <td>25-29.9</td>
+                                            <td>Enhanced Risk</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Moderately obese</td>
+                                                <td>30 -34.9</td>
+                                                <td>Medium Risk</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Severely obese</td>
+                                                <td>35 -39.9</td>
+                                                <td>High Risk</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Very Severely obese</td>
+                                                <td>40 and above</td>
+                                                <td>Very High Risk</td>
+                                            </tr>
+                                            <br>
+                                            
+                                        </table><br>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                             </div>
+                        </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+  
+        <!-- BMI Start -->
+        <section id="calculateBMI">
+        <div class="discount wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p></p>
+                    <h2>BMI CALCULATOR</h2>
+                </div>
+                <div class="container discount-text">
+                    <p>
+                        Find out if you're healthy according to BMI (Body Mass Index) with our free calculator tool! 
+                    </p>
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="control-group">
+                                    <input type="number" class="form-control" id="height" placeholder="Height (cm/m)" required="required" data-validation-required-message="Please enter your height" />
+                                    <br>
+                                </div>
+                                
+                                <div class="control-group">
+                                    <input type="number" class="form-control" id="weight" placeholder="Weight (kg)" required="required" data-validation-required-message="Please enter your weight" />
+                                    <br>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="BMI" placeholder="BMI Range" readonly="true">
+                                    <br>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control" id="message" placeholder="BMI Category and Health Risk" readonly="true"></textarea>
+                                    <br>
+                                </div>
+                                <div>
+                                    <button class="btn" type="submit" onclick="calculate()" id="MessageButton">Calculate</button>
+                                    <!-- <button class="btn"  type="reset">Reset</button> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!-- BMI End -->
+        </section>
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <a href="index.html" class="footer-logo">Zu<span>hai</span>mu</a>
+                        <h3>Shah Alam,Selangor</h3>
+                        <div class="footer-menu">
+                            <p>+012 345 67890</p>
+                            <p>zuhaimucs251@gmail.com</p>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Zuhaimu</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+		<script src="js/bmi.js"></script>
+    </body>
+</html>
